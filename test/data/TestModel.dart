@@ -10,7 +10,7 @@ class TestModel
 		systemEvent.fromJson(
 		{
 			'id' : IdGenerator.nextLong(),
-			'time' : RandomDateTime.nextDateTime(new DateTime(2010, 1, 1), DateTime.now()).toIso8601String(),
+			'time' : RandomDateTime.nextDateTime(new DateTime(2010, 1, 1), DateTime.now()).toUtc().toIso8601String(),
 			'correlation_id' : IdGenerator.nextLong(),
 			'source' : IdGenerator.nextLong(),
 			'type' : RandomArray.pick([ EventLogTypeV1.Failure, EventLogTypeV1.Other, EventLogTypeV1.Restart, 

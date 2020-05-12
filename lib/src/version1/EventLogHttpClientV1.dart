@@ -2,7 +2,9 @@ import 'dart:async';
 import 'dart:convert';
 import 'package:pip_services3_commons/pip_services3_commons.dart';
 import 'package:pip_services3_rpc/pip_services3_rpc.dart';
-import '../../../pip_clients_eventlog.dart';
+
+import 'IEventLogClientV1.dart';
+import 'SystemEventV1.dart';
 
 
 class EventLogHttpClientV1 extends CommandableHttpClient implements IEventLogClientV1

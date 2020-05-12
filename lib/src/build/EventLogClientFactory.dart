@@ -1,5 +1,4 @@
-import '../clients/version1/EventLogNullClientV1.dart';
-import '../clients/version1/EventLogHttpClientV1.dart';
+import 'package:pip_clients_eventlog/src/version1/version1.dart';
 import 'package:pip_services3_components/pip_services3_components.dart';
 import 'package:pip_services3_commons/pip_services3_commons.dart';
 
